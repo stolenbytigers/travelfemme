@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+counter-reset: footnotecounter;
+background-color: #D8D8D8;
+color: #171717;
+}
+
+.wrapper{
+	margin: auto;
+	width: 600px;
+}
+
+h1{
+	text-align:center;
+	font-family: "Mr Eaves San OT";
+	
+}
+
+h2{
+	text-align: center;
+	font-family: "Mr Eaves San OT";
+	font-style: italic;
+}
+
+p{
+	text-align:left;
+	font-family: "Georgia";
+	font-size:16px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:20px;
+}
+
+.figure{
+	margin-left: 7%;
+	margin-right: 7%;
+	border: 2px solid #222222;
+}
+
+.caption{
+	text-align: center;
+	font-size:10px;
+	font-family: "Georgia";
+}
+
+span.footnote:before {
+  counter-increment: footnotecounter;
+  content: counter(footnotecounter);
+  position: relative;
+  top: -0.4em;
+}
+
+span.footnote {
+    color: #093190; 
+}
+
+figure{
+	align-content:center;
+}
+
+.bibliography{
+	font-family: "Georgia";
+	justify-content: inherit;
+	font-size:16px;}
+
+.endnotes{
+	border: 2px solid #222222;
+	padding-top:10px;
+	padding-bottom:20px;
+}
+
+.citations{
+	margin-top:5px;
+	margin-bottom:5px;
+}
